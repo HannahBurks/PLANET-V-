@@ -90,7 +90,7 @@ if (index - status > 1) return styles.unDone
 }
 
 export const getServerSideProps = async ({ params }) => {
-    const res = await axios.get(`https://main--planet-v-takeaway.netlify.app//api/orders/${params.id}`);
+    const res = await axios.get(`https://main--planet-v-takeaway.netlify.app/api/orders/${params.id}`);
     return {
       props: { order: res.data },
     };

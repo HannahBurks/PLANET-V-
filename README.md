@@ -1,3 +1,13 @@
+HOSTED VERSION -
+https://main--planet-v-takeaway.netlify.app/
+
+You are able to log in as admin via the .env details when going to https://main--planet-v-takeaway.netlify.app/admin/login
+
+Or you can use paypal development to set up a fake customer and use paypal credit to 'pay' for a delivery 
+*note no actual pizza will be sent - sorry!* 
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

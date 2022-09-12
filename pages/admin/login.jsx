@@ -12,7 +12,7 @@ const Login = () => {
 
   const handleClick = async () => {
     try {
-      await axios.post("https://main--planet-v-takeaway.netlify.app//api/login", {
+      await axios.post("https://main--planet-v-takeaway.netlify.app/api/login", {
         username,
         password,
       });

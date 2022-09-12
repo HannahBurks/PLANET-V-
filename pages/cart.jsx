@@ -32,7 +32,7 @@ const cart = useSelector((state) => state.cart);
 
   const createOrder = async (data) => {
     try {
-      const res = await axios.post("http://localhost:3000/api/orders", data);
+      const res = await axios.post("https://main--planet-v-takeaway.netlify.app/api/orders", data);
       if (res.status === 201) {
         dispatch(reset());
         router.push(`/orders/${res.data._id}`);

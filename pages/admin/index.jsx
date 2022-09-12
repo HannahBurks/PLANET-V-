@@ -25,7 +25,7 @@ const Index = ({ orders, products }) => {
     const currentStatus = item.status;
 
     try {
-      const res = await axios.put("https://main--planet-v-takeaway.netlify.app//api/orders/" + id, {
+      const res = await axios.put("https://main--planet-v-takeaway.netlify.app/api/orders/" + id, {
         status: currentStatus + 1,
       });
       setOrderList([
@@ -129,8 +129,8 @@ export const getServerSideProps = async (ctx) => {
     };
   }
 
-  const productRes = await axios.get("https://main--planet-v-takeaway.netlify.app//api/products");
-  const orderRes = await axios.get("https://main--planet-v-takeaway.netlify.app//api/orders");
+  const productRes = await axios.get("https://main--planet-v-takeaway.netlify.app/api/products");
+  const orderRes = await axios.get("https://main--planet-v-takeaway.netlify.app/api/orders");
 
   return {
     props: {
